@@ -2,20 +2,20 @@
 
 A minimalist Python package to draw 2D decision boundaries in machine learning
 
-##Prerequisites
+## Prerequisites
 
 You need your data as two NumPy matrices: a collection of 2D points, and a collection of binary labels.
 
     import numpy as np
-    x = np.random.rand(10, 2)               # N rows, 2 columns, random value
-    y = np.random.randint(2, size=(10, 1))  # N rows, 1 column, random 1 or 0
+    x = np.random.rand(10, 2)               # matrix of (N, 2), random value
+    y = np.random.randint(2, size=(10, 1))  # matrix of (N, 1), elements randomly 0 or 1
 
 Then you need a classification function that takes a matrix of 2D points and returns a matrix of labels:
 
-    def my_classification_function(points):                        # points is N rows, 2 columns
-        return (x[:, 0] + x[:, 1] > 1).astype(int).reshape(-1, 1)  # returns a matrix of N rows and 1 column, either 1 or 0
+    def my_classification_function(points):                        # points is a matrix of (N, 2)
+        return (x[:, 0] + x[:, 1] > 1).astype(int).reshape(-1, 1)  # returns a matrix of (N, 1), elements either 0 or 1
 
-##Usage
+## Usage
 
 Call the `plot` method, passing your data, and the classification function as a lambda:
 
