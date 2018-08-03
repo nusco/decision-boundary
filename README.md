@@ -30,7 +30,7 @@ decision_boundary.show(data.X_all, data.Y_all, lambda points: my_classification_
 
 You'll get something like this:
 
-<img src="https://raw.githubusercontent.com/nusco/decision-boundary/master/example1.jpg" width="250">
+<img src="https://raw.githubusercontent.com/nusco/decision-boundary/master/doc/example1.jpg" width="250">
 
 
 ## Options
@@ -43,4 +43,4 @@ decision_boundary.show(data, labels, lambda points: my_classification_function(p
 
 The line above results in a lower-resolution, zoomed out chart:
 
-<img src="https://raw.githubusercontent.com/nusco/decision-boundary/master/example2.jpg" width="250">
+<img src="https://raw.githubusercontent.com/nusco/decision-boundary/master/doc/example2.jpg" width="250">
