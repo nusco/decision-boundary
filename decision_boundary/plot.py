@@ -65,7 +65,5 @@ def plot_data(data, labels):
     plot_data_by_label(data, labels, 1, 'bp')
 
 
-def plot(data, labels, classification_function, resolution=1000, padding_percent=5):
-    plot_boundary(data[:, 0], data[:, 1], classification_function, resolution, padding_percent)
-    plot_data(data, labels)
+def show():
     plt.show()

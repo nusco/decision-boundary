@@ -17,10 +17,10 @@ Then you need a classification function that takes a matrix of 2D points, and re
 
 ## Usage
 
-Call the `plot` method, passing your data, and the classification function as a lambda:
+Call the `show` method, passing your data, and the classification function as a lambda:
 
     import decision_boundary
-    decision_boundary.plot(data.X_all, data.Y_all, classification_function)
+    decision_boundary.show(data.X_all, data.Y_all, classification_function)
 
 You'll get something like this:
 
@@ -31,7 +31,7 @@ You'll get something like this:
 
 You can specify the boundary's graphic resolution, and the chart's padding as a percent of the data range:
 
-    decision_boundary.plot(data, labels, lambda x: my_classification_function(x), resolution=50, padding_percent=80)
+    decision_boundary.show(data, labels, lambda x: my_classification_function(x), resolution=50, padding_percent=80)
 
 The line above results in:
 

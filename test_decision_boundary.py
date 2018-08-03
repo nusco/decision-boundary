@@ -6,4 +6,4 @@ def my_classification_function(x):
     return (x[:, 0] + x[:, 1] > 1).astype(int).reshape(-1, 1)
 
 import decision_boundary
-decision_boundary.plot(data, labels, lambda x: my_classification_function(x), resolution=50, padding_percent=80)
+decision_boundary.show(data, labels, lambda x: my_classification_function(x), resolution=50, padding_percent=80)
