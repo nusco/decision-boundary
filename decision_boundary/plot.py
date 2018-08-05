@@ -61,8 +61,8 @@ def plot_data_by_label(features, labels, label_selector, symbol):
 
 
 def plot_data(data, labels):
-    plot_data_by_label(data, labels, 0, 'g*')
-    plot_data_by_label(data, labels, 1, 'bp')
+    plot_data_by_label(data, labels, 0, 'bp')
+    plot_data_by_label(data, labels, 1, 'g*')
 
 
 def show():
