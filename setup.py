@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="decision_boundary",
-    version="0.0.1",
+    version="0.0.2",
     author="Paolo Perrotta",
     author_email="paolo.nusco.perrotta@gmail.com",
     description="A minimalist Python package to draw decision boundaries in machine learning.",
